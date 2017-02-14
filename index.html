@@ -7,19 +7,40 @@
     <script src="assets/scripts/background.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-<body>
-	<div id="particles-js">
+<body id="particles-js">
+	<span id="s1"></span>
+    <span id="s2"></span>
+    <span id="s3"></span>
+    <span id="s4"></span>
+    <div class="container-global">
+    	<div class="page">
 			<header>
 				<img src="assets/img/logo.png" alt="logo-MAA" class="logo">
 				<nav>
-					<h3>CONTACT</h3>
-					<h3>ABOUT</h3>
+					<h2>Contact</h2>
+					<h2>About</h2>
 				</nav>
 			</header>
 			<main>
-				<img src="assets/img/avatar.png">
-				
+				<ul id="nav" class="pointer">
+		            <li><a href="#s1" class="circle"></a></li>
+		            <li><a href="#s2" class="circle"></a></li>
+		            <li><a href="#s3" class="circle"></a></li>
+		            <li><a href="#s4" class="circle"></a></li>
+		        </ul>
+				<div class="discover-pathe">
+					<img src="assets/img/pathe_logo.png" alt="pathe-logo" class="pathe-logo">
+					<h1>Une expérience<br>unique</h1>
+					<input type="submit" name="discover-button" value="Découvrir">
+				</div>
+				<div class="frame">
+					<img src="assets/img/avatar.png" alt="avatar-picture" class="avatar-picture">		
+				</div>
 			</main>
-	</div>
+		</div>
+		<div class="page"></div>
+		<div class="page"></div>
+		<div class="page"></div>	
+    </div>
 </body>
 </html>
