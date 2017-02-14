@@ -1,0 +1,24 @@
+body {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-z-index: -1;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+h3 {
+	color: white;
+	font-family: 'Arial';
+}
