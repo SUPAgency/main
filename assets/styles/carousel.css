@@ -27,8 +27,21 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 200px;
-	height: 300px;
+	width: 250px;
+	height: 350px;
+	border-radius: 3px;
+}
+
+.page-carousel:first-child .carousel-item {
+	box-shadow: 0px 0px 20px 5px #866423;
+}
+
+.page-carousel:nth-child(2) .carousel-item {
+	box-shadow: 0px 0px 20px 5px #468ba3;
+}
+
+.page-carousel:last-child .carousel-item {
+	box-shadow: 0px 0px 20px 5px #791919;
 }
 
 .carousel-item:nth-child(1) {

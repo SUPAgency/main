@@ -109,7 +109,17 @@ main {
 
 .logos-pathe-sw {
     display: flex;
+    align-items: center;
+}
 
+.logos-pathe-sw img:first-child {
+    width: 200px;
+    height: 180px;
+}
+
+.logos-pathe-sw img:last-child {
+    width: 250px;
+    height: 150px;
 }
 
 h2, h1, #discover-button, p {
@@ -146,6 +156,7 @@ h1 {
     /*border-width: 1px;
 	border-style: solid;
 	border-image: linear-gradient(to right, #d10f0e, #f14f00); /* DOESN'T WORK */
+    border-color: red;
     border-radius: 5px;
     font-size: 20px;
     text-transform: uppercase;
@@ -155,6 +166,7 @@ h1 {
 #discover-button:hover {
     color: black;
     background-color: white;
+    border-color: white;
     transition: 1s;
 }
 
@@ -283,7 +295,7 @@ h1 {
 .animation {
     margin-left: 200px;
     margin-right: 100px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .background-carousel {
@@ -412,6 +424,10 @@ h1 {
 
 /* PAGE 5 */
 
+.page:last-child {
+    height: 600px;
+}
+
 .big-snack {
     display: flex;
     flex-direction: column;
@@ -465,5 +481,3 @@ h1 {
         margin-top: 90px;
     }
 }
-
-@media ()

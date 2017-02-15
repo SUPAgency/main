@@ -35,11 +35,23 @@ window.onload = function() {
     ThirdPic.onclick=function(){
         showThirdPic();
     }
+
     $(document).ready(function() {
-        $('.circle, #img1, #img2, #img3, #discover-button ').on('click', function() {
+        $('#img1, #img2, #img3, #discover-button ').on('click', function() {
             var page = $(this).attr('href');
             var speed = 750;
             $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
             return false;
         });
+        $('.circle').on('click', function() {
+            var page = $(this).attr('href');
+            var speed = 750;
+            for(i=0; i < $('.circle').length; i++){
+                $('.circle').css('background-color', 'black')
+            }
+            $(this).css('background-color', 'white');
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
     });
+};
