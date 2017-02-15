@@ -170,7 +170,7 @@ h1 {
 }
 
 .rey-picture {
-	width: 350px;
+	width: 375px;
 	height: auto;
 }
 
@@ -437,4 +437,10 @@ h1 {
 .mini-twitter, .mini-facebook {
     height: auto;
     width: 30px;
+}
+
+@media (min-width: 1400px) {
+    .networks {
+        margin-top: 90px;
+    }
 }
