@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<meta charset="utf-8">
 	<title>Moore Adled Advertising</title>
 	<link rel="stylesheet" href="assets/styles/background.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
@@ -12,10 +13,15 @@
     <span id="s2"></span>
     <span id="s3"></span>
     <span id="s4"></span>
+    <span id="s5"></span>
+
     <div class="container-global">
     	<div class="page">
 			<header>
-				<img src="assets/img/logo.png" alt="logo-MAA" class="logo">
+				<div class="logos">
+					<img src="assets/img/logo.png" alt="logo-MAA" class="logo-MAA">
+					<img src="assets/img/pathe_logo.png" alt="pathe-logo" class="pathe-logo">		
+				</div>
 				<nav>
 					<h2>Contact</h2>
 					<h2>About</h2>
@@ -27,20 +33,66 @@
 		            <li><a href="#s2" class="circle"></a></li>
 		            <li><a href="#s3" class="circle"></a></li>
 		            <li><a href="#s4" class="circle"></a></li>
+		            <li><a href="#s5" class="circle"></a></li>
 		        </ul>
 				<div class="discover-pathe">
-					<img src="assets/img/pathe_logo.png" alt="pathe-logo" class="pathe-logo">
+					<img src="assets/img/star_wars_title.png" alt="star-wars-text" class="star-wars-text">
 					<h1>Une expérience<br>unique</h1>
-					<input type="submit" name="discover-button" value="Découvrir">
+					<a href="#s2" id="discover-button">Découvrir</a>
 				</div>
 				<div class="frame">
 					<img src="assets/img/frame_shadow.png" alt="" class="frame-shadow">		
 				</div>
 			</main>
 		</div>
+
+		<div class="page">
+			<h1>Explorez</h1>
+			<p>Découvrez nos expériences intéractives</p>
+			<div class="container-perspective">
+				<img src="assets/img/poe.png" alt="poe" class="perspective-left" id="poe">
+				<img src="assets/img/rey_finn.png" alt="rey-and-finn" class="perspective-middle" id="rey-finn">
+				<img src="assets/img/kylo-ren.png" alt="kylo-ren" class="perspective-right" id="kylo-ren">
+			</div>
+		</div>
+
 		<div class="page"></div>
-		<div class="page"></div>
-		<div class="page"></div>	
+
+		<div class="page">
+			<h1>Guide</h1>
+			<div class="container-blue-frames">
+				<div class="blue-frame">
+					<p>Combien<br>êtes-vous ?</p>
+					<div class="container-blue-buttons">
+						<div class="blue-button">1</div>
+						<div class="blue-button">2</div>	
+					</div>
+					<div class="blue-button">3</div>
+				</div>
+				<div class="blue-frame">
+					<p>Placez-vous<br>correctement</p>
+					<img src="assets/img/stormtrooper.png" alt="stormtrooper" class="stormtrooper">
+				</div>
+				<div class="blue-frame">
+					<img src="assets/img/blue_arrow.png" alt="arrow" class="blue-arrow">
+					<p>Glissez pour<br>changer de<br>filtre</p>
+				</div>		
+			</div>
+		</div>
+
+		<div class="page">
+            <div class="big-snack">
+                <img src="assets/img/twitter_logo.png" alt="twitter-logo" class="big-twitter">
+                <h1 class="snack_spitch">Partagez votre expérience augmentée<br>et tentez de gagner des cadeaux</h1>
+            	<img src="assets/img/snack.png" alt="snack-img" class="snack-img">
+            </div>
+            <div class="networks">
+                <h2>Suivez nous</h2>
+                <img src="assets/img/facebook.png" alt="little-facebook-logo" class="mini-facebook">
+                <img src="assets/img/twitter.png" alt="little-twitter-logo" class="mini-twitter">
+            </div>
+        </div>
+		</div>
     </div>
 </body>
 </html>

@@ -1,28 +1,9 @@
+/* BODY */
+
 body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-}
-
-nav {
-	width: 200px;
-	margin-right: 20px;
-	display: flex;
-	justify-content: space-between;
-	letter-spacing: 2px;
-	margin-top: 20px;
-	margin-right: 50px;
-}
-
-main {
-	display: flex;
-	justify-content: space-around;
-	margin-left: 150px;
 }
 
 .pointer {
@@ -61,17 +42,18 @@ span {
 
 .page {
     /* height à adapter avec media queries */
-    height: 1000px;
+    height: 750px;
     /* préparation des transitions */
     transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
 }
 
-#s1:target ~ .container-global {top:0px; }
-#s2:target ~ .container-global {top:-1000px;}
-#s3:target ~ .container-global {top:-2000px;}
-#s4:target ~ .container-global {top: -3000px;}
+#s1:target ~ .container-global { top: 0px; }
+#s2:target ~ .container-global { top: -750px; }
+#s3:target ~ .container-global { top: -1500px; }
+#s4:target ~ .container-global { top: -2325px; }
+#s5:target ~ .container-global { top: -3000px; }
 
-a {
+li a {
     /* on applique des marges aux liens */
     display: inline-block;
     margin: 0 3em;
@@ -86,36 +68,88 @@ a {
 #s2:target ~ .container-global #nav li:nth-child(2) a {background-color: white;}
 #s3:target ~ .container-global #nav li:nth-child(3) a {background-color: white;}
 #s4:target ~ .container-global #nav li:nth-child(4) a {background-color: white;}
+#s5:target ~ .container-global #nav li:nth-child(5) a {background-color: white;}
 
+/* PAGE 1 */
 
-h2, h1, input[type="submit"] {
-	text-transform: uppercase;
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logos {
+	display: flex;
+	align-items: center;
+}
+
+.pathe-logo {
+	width: 120px;
+	height: 100px;
+}
+
+nav {
+	width: 200px;
+	margin-right: 20px;
+	display: flex;
+	justify-content: space-between;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 150px;
+}
+
+h2, h1, #discover-button, p {
 	color: white;
 	font-family: 'Arial';
+}
+
+h2, h1, #discover-button {
+	text-transform: uppercase;
+}
+
+.star-wars-text {
+	width: 300px;
+	height: auto;
 }
 
 h1 {
 	font-size: 50px;
 	text-align: center;
-	letter-spacing: 2px;
-	filter: drop-shadow(0px 0px 10px grey);
+	letter-spacing: 4px;
+	text-shadow: 0 0 10px lightgrey;
 }
 
-.pathe-logo {
-	width: 200px;
-	height: auto;
+.page:first-child h1 {
+	text-shadow: 0 0 20px #791919; /* good color? */
 }
 
-input[type="submit"] {
-	width: 180px;
-	height: 50px;
-	border: 1px solid white;
-	background-color: transparent;
-	border-radius: 5px;
-	font-size: 20px;
+#discover-button {
+    line-height: 50px;
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    /*border-width: 1px;
+	border-style: solid;
+	border-image: linear-gradient(to right, #d10f0e, #f14f00); /* DOESN'T WORK */
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.discover-pathe, .frame {
+#discover-button:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
+}
+
+.discover-pathe {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,4 +159,166 @@ input[type="submit"] {
 .frame-shadow {
 	width: 300px;
 	height: auto;
+}
+
+/* PAGE 2 */
+
+.page:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.page:nth-child(2) h1 {
+	margin: 0;
+	text-shadow: 0 0 30px lightblue; /* good color? */
+}
+
+.page:nth-child(2) p {
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: 4px;
+	text-shadow: 0 0 20px lightgrey;
+	margin-bottom: 80px;
+}
+
+.container-perspective {
+    height: 400px;
+    width: 800px;
+    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+    perspective: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.perspective-left, .perspective-right {
+	height: 375px;
+}
+
+.perspective-left {
+	-webkit-transform: rotateY(-2deg); /* Chrome, Safari, Opera  */
+    transform: rotateY(-2deg);
+    /* filter: drop-shadow(0px 0px 20px #866423); */
+}
+
+.perspective-middle {
+	height: 450px;
+    /* filter: drop-shadow(0px 0px 20px #468ba3); */
+}
+
+.perspective-right {
+	-webkit-transform: rotateY(2deg); /* Chrome, Safari, Opera  */
+    transform: rotateY(2deg);
+    /* filter: drop-shadow(0px 0px 20px #791919); */
+}
+
+/* PAGE 4 */
+
+.page:nth-child(4) {
+    color: #00aeef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page:nth-child(4) p {
+    color: #00aeef;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px #00aeef;
+}
+
+.page:nth-child(4) p:first-child, .page:nth-child(4) p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.container-blue-frames {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-frame {
+    width: 275px;
+    height: 375px;
+    border: 5px solid #00aeef;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-blue-buttons {
+    width: 160px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-button {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #00aeef;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    filter: drop-shadow(0px 0px 10px #00aeef);
+}
+
+.stormtrooper, .blue-arrow {
+    width: 150px;
+    height: auto;
+}
+
+.blue-frame:last-child p {
+    margin: 0;
+}
+
+/* PAGE 5 */
+
+.big-snack {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.snack_spitch {
+    font-size: 40px;
+    text-shadow: 0 0 10px lightgrey;
+}
+
+.snack-img {
+    width: 400px;
+    height: 280px;
+}
+
+.big-twitter {
+    height: auto;
+    width: 120px;
+}
+
+.networks {
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: 20px;
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-twitter, .mini-facebook {
+    height: auto;
+    width: 30px;
 }
