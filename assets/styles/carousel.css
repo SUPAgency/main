@@ -32,15 +32,15 @@
 	border-radius: 3px;
 }
 
-.page-carousel:first-child .carousel-item {
+.anim-yellow .carousel-item {
 	box-shadow: 0px 0px 20px 5px #866423;
 }
 
-.page-carousel:nth-child(2) .carousel-item {
+.anim-blue .carousel-item {
 	box-shadow: 0px 0px 20px 5px #468ba3;
 }
 
-.page-carousel:last-child .carousel-item {
+.anim-red .carousel-item {
 	box-shadow: 0px 0px 20px 5px #791919;
 }
 
