@@ -3,7 +3,6 @@
 body {
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 }
 
 .pointer {
@@ -37,21 +36,13 @@ span {
     position: relative;
     top: 0;
     /* on prépare la transition à venir */
-    transition: top 1.4s cubic-bezier(.49,.22,.52,1.35);
 }
 
 .page {
     /* height à adapter avec media queries */
     height: 750px;
     /* préparation des transitions */
-    transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
 }
-
-#s1:target ~ .container-global { top: 0px; }
-#s2:target ~ .container-global { top: -750px; }
-#s3:target ~ .container-global { top: -1500px; }
-#s4:target ~ .container-global { top: -2325px; }
-#s5:target ~ .container-global { top: -3000px; }
 
 li a {
     /* on applique des marges aux liens */
@@ -63,12 +54,6 @@ li a {
     /* on prévoit une petite transition (lueur) */
     transition: all 1s;
 }
-
-#s1:target ~ .container-global #nav li:nth-child(1) a {background-color: white;}
-#s2:target ~ .container-global #nav li:nth-child(2) a {background-color: white;}
-#s3:target ~ .container-global #nav li:nth-child(3) a {background-color: white;}
-#s4:target ~ .container-global #nav li:nth-child(4) a {background-color: white;}
-#s5:target ~ .container-global #nav li:nth-child(5) a {background-color: white;}
 
 /* PAGE 1 */
 
@@ -475,3 +460,5 @@ h1 {
         margin-top: 90px;
     }
 }
+
+@media ()
