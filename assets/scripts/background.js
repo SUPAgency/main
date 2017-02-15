@@ -1,4 +1,41 @@
 window.onload = function() {
+    var FirstPic = document.getElementById('poe');
+    var SecPic = document.getElementById('rey-finn');
+    var ThirdPic = document.getElementById('kylo-ren');
+    var FirstPicSlide = document.getElementById('first-lat');
+    var SecPicSlide = document.getElementById('second-lat');
+    var ThirdPicSlide = document.getElementById('third-lat');
+
+    function showFirstPic(){
+        FirstPicSlide.style.display = "flex";
+        SecPicSlide.style.display = "none";
+        ThirdPicSlide.style.display = "none";
+    }
+
+    function showSecPic(){
+        FirstPicSlide.style.display = "none";
+        SecPicSlide.style.display = "flex";
+        ThirdPicSlide.style.display = "none";
+    }
+
+    function showThirdPic(){
+        FirstPicSlide.style.display = "none";
+        SecPicSlide.style.display = "none";
+        ThirdPicSlide.style.display = "flex";
+    }
+
+    FirstPic.onclick=function(){
+        showFirstPic();
+    }
+
+    SecPic.onclick=function(){
+        showSecPic();
+    }
+
+    ThirdPic.onclick=function(){
+        showThirdPic();
+    }
+
     particlesJS("particles-js", {
         "particles": {
             "number": {"value": 160, "density": {"enable": true, "value_area": 800}},
@@ -54,21 +91,4 @@ window.onload = function() {
         },
         "retina_detect": true
     });
-    var count_particles, stats, update;
-    stats = new Stats;
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-    count_particles = document.querySelector('.js-count-particles');
-    update = function () {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
 };
