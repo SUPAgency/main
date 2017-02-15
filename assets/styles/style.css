@@ -82,9 +82,15 @@ header {
 	align-items: center;
 }
 
+.logo-MAA {
+    margin-left: 105px;
+}
+
 .pathe-logo {
 	width: 120px;
 	height: 100px;
+    position: fixed;
+    margin-left: 25px;
 }
 
 nav {
@@ -227,12 +233,22 @@ h1 {
     /* filter: drop-shadow(0px 0px 20px #791919); */
 }
 
+#poe:hover{
+    filter: drop-shadow(0px 0px 25px #866423);
+}
+#rey-finn:hover{
+    filter: drop-shadow(0px 0px 23px #468ba3);
+}
+#kylo-ren:hover{
+    filter: drop-shadow(0px 0px 25px #791919);
+}
+
 /* PAGE 3 */
 
 .page-carousel {
     height: 725px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -274,8 +290,14 @@ h1 {
     color: #d33232;
 }
 
-.animation img {
-    width: 250px;
+.animation {
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 200px;
+}
+
+.background-carousel {
+    width: 400px;
     height: auto;
 }
 
@@ -437,6 +459,15 @@ h1 {
 .mini-twitter, .mini-facebook {
     height: auto;
     width: 30px;
+}
+
+.mini-twitter:hover {
+    transition: 1s;
+     transform: rotate(360deg);
+}
+.mini-facebook:hover {
+    transition: 1s;
+    transform: rotate(360deg);
 }
 
 @media (min-width: 1400px) {
