@@ -89,12 +89,25 @@ header {
 
 nav {
 	width: 200px;
-    height: 50px;
+    height: 80px;
 	display: flex;
 	justify-content: space-between;
 	letter-spacing: 2px;
 	margin-top: 20px;
 	margin-right: 50px;
+}
+
+nav h2 {
+    padding: 15px;
+    border-radius: 5px;
+    border: 0px solid black;
+}
+
+nav h2:hover {
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+    transition: 1s;
 }
 
 main {
@@ -223,7 +236,7 @@ h1 {
     align-items: center;
 }
 
-.page-carousel:nth-child(2), .page-carousel:last-child {
+.page-carousel:nth-child(2), .page-carousel:nth-child(3) {
     display: none;
 }
 
@@ -233,7 +246,8 @@ h1 {
 }
 
 .page-carousel p {
-  font-size: 22px;  
+    font-size: 22px;
+    margin: 0; 
 }
 
 .page-carousel:first-child h1 {
@@ -274,19 +288,29 @@ h1 {
 }
 
 .container-desc {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.container-first-page {
+    height: 100px;
 }
 
 .icons, .text {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
-.face, .group, .gift, .hand {
+.text {
+    margin-left: 15px;
+    align-items: flex-start;
+}
+
+.face, .group, .gift {
     width: 50px;
     height: 50px;
 }
@@ -296,8 +320,9 @@ h1 {
     height: 35px;
 }
 
-.figure {
-
+.figure, .hand {
+    width: 45px;
+    height: auto;
 }
 
 .detection, .photo {
@@ -378,7 +403,7 @@ h1 {
 .big-snack {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 150px;
     margin-right: 100px;
     align-items: center;
@@ -400,7 +425,7 @@ h1 {
 }
 
 .networks {
-	margin-top: auto;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: 20px;
     width: 225px;
