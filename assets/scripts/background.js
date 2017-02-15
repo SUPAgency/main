@@ -92,7 +92,15 @@ window.onload = function() {
         });
 
         $('.anim-blue .carousel, .anim-red .carousel').css({
-            'margin-left' : '150px',
+            'margin-left' : '100px',
+        });
+
+        $('main').css({
+            'margin-left' : '50px',
+        });
+
+        $('.description').css({
+            'width' : '350px',
         });
 
     }

@@ -315,6 +315,7 @@ h1 {
 
 .description {
     height: 350px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -354,6 +355,10 @@ h1 {
 .text {
     margin-left: 15px;
     align-items: flex-start;
+}
+
+.gift, .text p:last-child {
+    margin-top: 15px;
 }
 
 .face, .group, .gift {
