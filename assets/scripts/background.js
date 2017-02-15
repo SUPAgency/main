@@ -28,21 +28,48 @@ window.onload = function() {
         showFirstPic();
     }
 
-    SecPic.onclick=function(){
+    SecPic.onclick=function() {
         showSecPic();
     }
 
-    ThirdPic.onclick=function(){
+    ThirdPic.onclick=function() {
         showThirdPic();
     }
 
     $(document).ready(function() {
-        $('#img1, #img2, #img3, #discover-button ').on('click', function() {
+        $('#img1, #img2, #img3').on('click', function() {
             var page = $(this).attr('href');
             var speed = 750;
+            for(i=0; i < $('.circle').length; i++){
+                $('.circle').css('background-color', 'black')
+            }
+            $('#pointer-three').css('background-color', 'white');
             $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
             return false;
         });
+
+        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five').on('click', function() {
+            var page = $(this).attr('href');
+            var speed = 750;
+            for(i=0; i < $('.circle').length; i++){
+                $('.circle').css('background-color', 'black')
+            }
+            $('#pointer-one').css('background-color', 'white');
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+
+        $('#discover-button').on('click', function() {
+            var page = $(this).attr('href');
+            var speed = 750;
+            for(i=0; i < $('.circle').length; i++){
+                $('.circle').css('background-color', 'black')
+            }
+            $('#pointer-two').css('background-color', 'white');
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+
         $('.circle').on('click', function() {
             var page = $(this).attr('href');
             var speed = 750;
@@ -54,6 +81,21 @@ window.onload = function() {
             return false;
         });
     });
+
+    if (screen.width < 641) {
+        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel').css({
+            'display' : 'none',
+        });
+
+        $('.anim-yellow .carousel').css({
+            'margin-left' : '100px',
+        });
+
+        $('.anim-blue .carousel, .anim-red .carousel').css({
+            'margin-left' : '150px',
+        });
+
+    }
 
     particlesJS("particles-js", {
         "particles": {

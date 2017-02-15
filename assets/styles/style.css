@@ -414,6 +414,15 @@ h1 {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 10px #00aeef;
+    opacity: 1;
+}
+
+.blue-frame:last-child p {
+    margin: 0;
+}
+
+.blue-frame:hover {
+    box-shadow: 0px 0px 15px 5px #00aeef;
 }
 
 .container-blue-buttons {
@@ -439,14 +448,6 @@ h1 {
 .stormtrooper, .blue-arrow {
     width: 150px;
     height: auto;
-}
-
-.blue-frame:last-child p {
-    margin: 0;
-}
-
-.blue-frame:hover {
-    box-shadow: 0px 0px 15px 5px #00aeef;
 }
 
 /* PAGE 5 */
@@ -511,6 +512,10 @@ h1 {
 
 @media screen and (max-width: 640px) {
     .pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav {
+        display: none;
+    }
+
+    .page-carousel + img {
         display: none;
     }
 }
