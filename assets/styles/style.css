@@ -89,7 +89,7 @@ header {
 
 nav {
 	width: 200px;
-	margin-right: 20px;
+    height: 50px;
 	display: flex;
 	justify-content: space-between;
 	letter-spacing: 2px;
@@ -214,6 +214,96 @@ h1 {
     /* filter: drop-shadow(0px 0px 20px #791919); */
 }
 
+/* PAGE 3 */
+
+.page-carousel {
+    height: 725px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-carousel:nth-child(2), .page-carousel:last-child {
+    display: none;
+}
+
+.page-carousel h1 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.page-carousel p {
+  font-size: 22px;  
+}
+
+.page-carousel:first-child h1 {
+    text-shadow: 0 0 20px orange;
+}
+
+.page-carousel:first-child p {
+    color: #e9cb64;
+}
+
+.page-carousel:nth-child(2) h1 {
+    text-shadow: 0 0 20px lightblue;
+}
+
+.page-carousel:nth-child(2) p {
+    color: #83c5f8;
+}
+
+.page-carousel:last-child h1 {
+    text-shadow: 0 0 20px red;
+}
+
+.page-carousel:last-child p {
+    color: #d33232;
+}
+
+.animation img {
+    width: 250px;
+    height: auto;
+}
+
+.description {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-desc {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons, .text {
+    flex-direction: column;
+    align-items: center;
+}
+
+.face, .group, .gift, .hand {
+    width: 50px;
+    height: 50px;
+}
+
+.camera {
+    width: 45px;
+    height: 35px;
+}
+
+.figure {
+
+}
+
+.detection, .photo {
+    display: flex;
+}
+
 /* PAGE 4 */
 
 .page:nth-child(4) {
@@ -251,7 +341,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 15px #00aeef;
+    box-shadow: 0px 0px 10px #00aeef;
 }
 
 .container-blue-buttons {
