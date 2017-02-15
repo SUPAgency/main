@@ -38,21 +38,21 @@ window.onload = function() {
 
     particlesJS("particles-js", {
         "particles": {
-            "number": {"value": 160, "density": {"enable": true, "value_area": 800}},
+            "number": {"value": 800, "density": {"enable": true, "value_area": 800}},
             "color": {"value": "#ffffff"},
             "shape": {
-                "type": "polygon",
+                "type": "circle",
                 "stroke": {"width": 0, "color": "#b4b0d1"},
                 "polygon": {"nb_sides": 5},
                 "image": {"src": "img/github.svg", "width": 150, "height": 100}
             },
             "opacity": {
-                "value": 0.0959616153538585,
+                "value": 0.7,
                 "random": true,
                 "anim": {"enable": true, "speed": 0.485975555429562, "opacity_min": 0, "sync": false}
             },
             "size": {
-                "value": 3.998400639744104,
+                "value": 2.998400639744104,
                 "random": true,
                 "anim": {"enable": true, "speed": 0.2, "size_min": 0, "sync": true}
             },
