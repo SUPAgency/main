@@ -62,7 +62,7 @@ header {
 	justify-content: space-between;
 }
 
-.logos {
+.logos-header {
 	display: flex;
 	align-items: center;
 }
@@ -71,7 +71,7 @@ header {
     margin-left: 105px;
 }
 
-.pathe-logo {
+.logos-header .pathe-logo {
 	width: 120px;
 	height: 100px;
     position: fixed;
@@ -84,7 +84,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	letter-spacing: 2px;
-	margin-top: 20px;
+	margin-top: 5px;
 	margin-right: 50px;
 }
 
@@ -105,6 +105,11 @@ main {
 	display: flex;
 	justify-content: space-around;
 	margin-left: 150px;
+}
+
+.logos-pathe-sw {
+    display: flex;
+
 }
 
 h2, h1, #discover-button, p {
