@@ -1,0 +1,318 @@
+    .desktop-podium{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        margin-top: -40px;
+    }
+    nav {
+        display: none;
+    }
+
+    .img{
+        height: auto;
+        width: 250px;
+    }
+
+    .other-video{
+        display: none;
+    }
+
+    main{
+        display: none;
+    }
+
+    .page1{
+        display: flex;
+        flex-direction: column;
+    }
+    .page1-content{
+        display: flex;
+    }
+
+    .page2{
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+
+    }
+    .discover-pathe {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-header {
+        display: flex;
+        height: 60px;
+        width: 60px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+
+    .trait {
+        background-color: white;
+        width: 60px;
+        height: 10px;
+    }
+
+    .logo-MAA {
+        margin-top: 15px;
+        height: 180px;
+    }
+
+    .pathe-logo {
+        height: 200px;
+        width: 250px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 4px;
+        text-shadow: 0 0 20px red;
+        display: inline;
+    }
+
+    .main-vote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .rey-img {
+        margin-top: -60px;
+        margin-left: 150px;
+    }
+
+    .video-main{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-top: -30px;
+        height: 100px;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    p{
+        color: white;
+        font-size: 38px;
+    }
+
+    .podium{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        text-shadow: 0 0 40px red;
+    }
+    .un, .deux, .trois{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .un{
+        margin-bottom: 70px;
+    }
+
+    .deux{
+        margin-bottom: 35px;
+    }
+
+    .plus{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+        font-size: 60px;
+    }
+
+    .plus-h1{
+        margin-top: 60px;
+        font-size: 100px;
+    }
+
+    .peteburne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .video-plus{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+
+    .first-column-video{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+    }
+
+    .second-column-video{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 500px;
+    }
+
+    .speech-video{
+        margin-top: 40px;
+    }
+
+    .fb-logo{
+        height: 60px;
+        margin-left: 30px;
+    }
+
+    @media only screen and (min-device-width : 641px) {
+        .logo{
+            display: none;
+        }
+        .separation{
+            margin-top: 50px;
+            height: 80px;
+        }
+        .main-vote{
+            display: none;
+        }
+
+
+        .menu-header {
+            display: none;
+        }
+        nav{
+            width: 200px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            margin-right: 50px;
+            color: white;
+             }
+
+         nav h2 {
+            padding: 15px;
+            border-radius: 5px;
+            border: 0px solid black;
+        }
+
+        nav h2:hover {
+            border: 1px solid white;
+            color: black;
+            background-color: white;
+            transition: 1s;
+         }
+
+        .discover-pathe {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #discover-button {
+            line-height: 50px;
+            text-align: center;
+            width: 180px;
+            height: 50px;
+            /*border-width: 1px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #d10f0e, #f14f00); /* DOESN'T WORK */
+            border-radius: 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            border: 1px solid red;
+        }
+
+        #discover-button:hover {
+            color: black;
+            background-color: white;
+            border-color: white;
+            transition: 1s;
+        }
+
+        .plus-h1{
+            font-size: 100px;
+        }
+
+        .page3{
+            display: none;
+        }
+
+        .plus{
+            display: none;
+        }
+
+        .rey-picture{
+            height: 400px;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 150px;
+        }
+        .rey-picture {
+            width: 400px;
+            height: auto;
+        }
+
+        #speechhidden{
+            display: none;
+        }
+       .podium{
+           margin-top: 0px;
+       }
+
+       .podium h1{
+        margin-top: -10px;
+           margin-bottom: 10px;
+       }
+       .other-video{
+           display: flex;
+           height: 250px;
+           justify-content: space-around;
+           width: 100%;
+       }
+        .img{
+            height: auto;
+            width: 170px;
+        }
+
+        .speech-video{
+            margin-top: 40px;
+        }
+
+    }

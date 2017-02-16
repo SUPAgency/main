@@ -7,7 +7,7 @@ body {
 
 .pointer {
     position: fixed;
-    left: 20px;
+    left: 10px;
     top: 40%;
 }
 
@@ -144,10 +144,6 @@ header {
     height: 10px;
 }
 
-.menu-header:hover {
-
-}
-
 .logo-MAA {
     width: 120px;
     height: 90px;
@@ -155,7 +151,7 @@ header {
 }
 
 nav {
-	width: 280px;
+	width: 300px;
     height: 80px;
 	display: flex;
 	justify-content: space-between;
@@ -319,6 +315,35 @@ h1 {
 
 /* PAGE 3 */
 
+.replace-carousel {
+    display: none;
+    width: 650px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.replace-carousel img {
+    width: 300px;
+    height: 400px;
+}
+
+.carousel-picture {
+    height: 400px;
+    width: auto;
+}
+
+.anim-yellow .replace-carousel {
+    filter: drop-shadow(0px 0px 10px #866423);
+}
+
+.anim-blue .replace-carousel {
+    filter: drop-shadow(0px 0px 10px #468ba3);
+}
+
+.anim-red .replace-carousel {
+    filter: drop-shadow(0px 0px 10px #791919);
+}
+
 .page-carousel {
     height: 725px;
     display: flex;
@@ -365,9 +390,8 @@ h1 {
 }
 
 .animation {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
 }

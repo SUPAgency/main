@@ -24,7 +24,7 @@ window.onload = function() {
 
     function showThirdPic(){
         FirstPicSlide.style.display = "none";
-        SecPicSlide.style.display = "none";
+        SecPicSlide.style.display = "none"; 
         ThirdPicSlide.style.display = "flex";
     }
 
@@ -40,6 +40,8 @@ window.onload = function() {
         showThirdPic();
     }
 
+    /* MENU BURGER */
+
     $('.menu-header-white').click(function() {
         $('.menu-header-white').css({
             'display' : 'none',
@@ -47,6 +49,9 @@ window.onload = function() {
         $('.menu-dropdown').show('slow');
         $('.menu-dropdown').css({
             'display' : 'flex',
+        });
+        $('.page:first-child').css({
+            'height' : '1750px',
         });
     });
 
@@ -57,6 +62,8 @@ window.onload = function() {
             'display' : 'flex',
         });
     });
+
+    /* TRANSITIONS */
     
     $('#img1, #img2, #img3').on('click', function() {
         var page = $(this).attr('href');
@@ -98,9 +105,14 @@ window.onload = function() {
         return false;
     });
 
-    /* A PROPOS */
+    /* ABOUT */
 
     $('#business').on('click', function(){
+        $('#container-global').slideUp(500);
+        $('#business_page').show();
+    });
+
+    $('#business-mobile').on('click', function(){
         $('#container-global').slideUp(500);
         $('#business_page').show();
     });
@@ -144,11 +156,11 @@ window.onload = function() {
     /* MEDIA QUERY */
 
     function mediaQuery() {
-        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel, .star-wars-text, #discover-button, nav').css({
+        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel, .star-wars-text, #discover-button, nav, .carousel').css({
             'display' : 'none',
         });
 
-        $('.menu-header').css({
+        $('.menu-header, .replace-carousel').css({
             'display' : 'flex',
         });
 
@@ -215,6 +227,10 @@ window.onload = function() {
 
         $('.networks').css({
             'margin-right': 'auto',
+        });
+
+        $('.animation').css({
+            'margin' : '0px',
         });
     }
 
