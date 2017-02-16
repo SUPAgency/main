@@ -1,4 +1,8 @@
 window.onload = function() {
+    if (screen.width < 641) {
+        mediaQuery();
+    }
+
     var FirstPic = document.getElementById('poe');
     var SecPic = document.getElementById('rey-finn');
     var ThirdPic = document.getElementById('kylo-ren');
@@ -35,80 +39,131 @@ window.onload = function() {
     ThirdPic.onclick=function() {
         showThirdPic();
     }
-
-    $(document).ready(function() {
-        $('#img1, #img2, #img3').on('click', function() {
-            var page = $(this).attr('href');
-            var speed = 750;
-            for(i=0; i < $('.circle').length; i++){
-                $('.circle').css('background-color', 'black')
-            }
-            $('#pointer-three').css('background-color', 'white');
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-            return false;
-        });
-
-        $('#discover-button').on('click', function() {
-            var page = $(this).attr('href');
-            var speed = 750;
-            for(i=0; i < $('.circle').length; i++){
-                $('.circle').css('background-color', 'black')
-            }
-            $('#pointer-two').css('background-color', 'white');
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-            return false;
-        });
-
-        $('.circle').on('click', function() {
-            var page = $(this).attr('href');
-            var speed = 750;
-            for(i=0; i < $('.circle').length; i++){
-                $('.circle').css('background-color', 'black')
-            }
-            $(this).css('background-color', 'white');
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-            return false;
-        });
+    
+    $('#img1, #img2, #img3').on('click', function() {
+        var page = $(this).attr('href');
+        var speed = 750;
+        for(i=0; i < $('.circle').length; i++){
+            $('.circle').css('background-color', 'black')
+        }
+        $('#pointer-three').css('background-color', 'white');
+        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        return false;
     });
+
+    $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five').on('click', function() {
+        for(i=0; i < $('.circle').length; i++){
+            $('.circle').css('background-color', 'black')
+        }
+        $('#pointer-one').css('background-color', 'white');
+    });
+
+    $('#discover-button').on('click', function() {
+        var page = $(this).attr('href');
+        var speed = 750;
+        for(i=0; i < $('.circle').length; i++){
+            $('.circle').css('background-color', 'black')
+        }
+        $('#pointer-two').css('background-color', 'white');
+        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        return false;
+    });
+
+    $('.circle').on('click', function() {
+        var page = $(this).attr('href');
+        var speed = 750;
+        for(i=0; i < $('.circle').length; i++){
+            $('.circle').css('background-color', 'black')
+        }
+        $(this).css('background-color', 'white');
+        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        return false;
+    });
+
+    $('#business').on('click', function(){
+        $('#container-global').slideUp(500);
+        $('#business_page').show();
+    });
+
+    $('#go_main').on('click', function(){
+        $('#business_page').slideUp(500);
+        $('#container-global').show(500);
+    });
+
+
+    function mediaQuery() {
+        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel, .star-wars-text, #discover-button, nav').css({
+                'display' : 'none',
+        });
+
+        $('.pathe-logo').css({
+            'width' : '250px',
+            'height' : '210px',
+        });
+
+        $('.rey-picture').css({
+            'width' : '700px',
+        });
+
+        $('.anim-yellow .carousel').css({
+            'margin-left' : '100px',
+        });
+
+        $('.anim-blue .carousel, .anim-red .carousel').css({
+            'margin-left' : '100px',
+        });
+
+        $('main').css({
+            'margin-left' : '0px',
+            'flex-direction' : 'column',
+        });
+
+        $('.page:first-child').css({
+            'height' : '1500px',
+        });
+
+        $('.page-carousel').css({
+            'flex-direction' : 'column',
+            'height' : '800px',
+        });
+
+        $('.page:nth-child(3)').css({
+            'padding-top' : '150px',
+            'padding-bottom' : '250px',
+        });
+
+        $('.description').css({
+            'max-width' : '600px',
+            'margin-top' : '150px',
+        });
+
+        $('.desc-blue, .desc-red').css({
+            'height' : '400px',
+        });
+
+        $('.page:nth-child(4) p').css({
+            'font-size' : '36px',
+        });
+
+        $('.text p').css({
+            'font-size' : '32px',
+        });
+
+        $('.container-desc').css({
+            'width' : '500px',
+        })
+
+        $('.networks').css({
+            'margin-right': 'auto',
+        });
+
+
+    }
 
     $(window).resize(function() {
         if (screen.width < 641) {
-            $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel').css({
-                'display' : 'none',
-            });
-
-            $('.anim-yellow .carousel').css({
-                'margin-left' : '100px',
-            });
-
-            $('.anim-blue .carousel, .anim-red .carousel').css({
-                'margin-left' : '100px',
-            });
-
-            $('main').css({
-                'margin-left' : '50px',
-            });
-
-            $('.page-carousel').css({
-                'flex-direction' : 'column',
-                'height' : '800px',
-            });
-
-            $('.page:nth-child(3)').css({
-                'padding-top' : '150px',
-                'padding-bottom' : '250px',
-            });
-
-            $('.description').css({
-                'max-width' : '600px',
-                'margin-top' : '150px',
-            });
-
-            $('.desc-blue, .desc-red').css({
-                'height' : '400px',
-            });
+            mediaQuery();
         }
-        
         else {
             window.location.reload(true);
         }
