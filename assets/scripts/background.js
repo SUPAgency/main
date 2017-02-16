@@ -48,17 +48,6 @@ window.onload = function() {
             return false;
         });
 
-        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five').on('click', function() {
-            var page = $(this).attr('href');
-            var speed = 750;
-            for(i=0; i < $('.circle').length; i++){
-                $('.circle').css('background-color', 'black')
-            }
-            $('#pointer-one').css('background-color', 'white');
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-            return false;
-        });
-
         $('#discover-button').on('click', function() {
             var page = $(this).attr('href');
             var speed = 750;
@@ -82,28 +71,48 @@ window.onload = function() {
         });
     });
 
-    if (screen.width < 641) {
-        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel').css({
-            'display' : 'none',
-        });
+    $(window).resize(function() {
+        if (screen.width < 641) {
+            $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel').css({
+                'display' : 'none',
+            });
 
-        $('.anim-yellow .carousel').css({
-            'margin-left' : '100px',
-        });
+            $('.anim-yellow .carousel').css({
+                'margin-left' : '100px',
+            });
 
-        $('.anim-blue .carousel, .anim-red .carousel').css({
-            'margin-left' : '100px',
-        });
+            $('.anim-blue .carousel, .anim-red .carousel').css({
+                'margin-left' : '100px',
+            });
 
-        $('main').css({
-            'margin-left' : '50px',
-        });
+            $('main').css({
+                'margin-left' : '50px',
+            });
 
-        $('.description').css({
-            'width' : '350px',
-        });
+            $('.page-carousel').css({
+                'flex-direction' : 'column',
+                'height' : '800px',
+            });
 
-    }
+            $('.page:nth-child(3)').css({
+                'padding-top' : '150px',
+                'padding-bottom' : '250px',
+            });
+
+            $('.description').css({
+                'max-width' : '600px',
+                'margin-top' : '150px',
+            });
+
+            $('.desc-blue, .desc-red').css({
+                'height' : '400px',
+            });
+        }
+        
+        else {
+            window.location.reload(true);
+        }
+    });
 
     particlesJS("particles-js", {
         "particles": {
