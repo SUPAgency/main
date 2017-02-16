@@ -27,7 +27,7 @@ li {
 	list-style-type: none;
 }
 
-span {
+#container-global span {
     display: none;
 }
 
@@ -84,14 +84,58 @@ header {
 	justify-content: space-between;
 }
 
-.menu-header {
+.menu-dropdown {
+    width: 300px;
+    height: 300px;
+    display: none;
+    background-color: white;
+    color: white;
+    text-transform: uppercase;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-dropdown h2 {
+    color: black;
+    margin-left: 15px;
+    font-size: 50px;
+}
+
+.menu-dropdown li {
+    color: black;
+    font-size: 36px;
+}
+
+.menu-dropdown ul {
+    height: 100px;
+    padding-bottom: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-header {
+    display: none;
     height: 60px;
     width: 60px;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 20px;
     margin-top: 20px;
+}
+
+.menu-text {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.menu-header-black {
+    display: flex;
+}
+
+.menu-header-black .trait {
+    background-color: black;
 }
 
 .trait {
@@ -101,12 +145,13 @@ header {
 }
 
 .menu-header:hover {
-    
+
 }
 
 .logo-MAA {
     width: 120px;
     height: 90px;
+    margin-right: auto;
 }
 
 nav {
@@ -545,15 +590,35 @@ h1 {
     height: 20px;
 }
 
-#business_page h2:hover {
+#business_page #go_main:hover {
     border: 1px solid black;
     color: white;
     background-color: black;
     transition: 1s;
 }
-
+#business_page h3{
+    font-size: 22px;
+}
 #business_page h1{
     color:black;
+}
+
+#business_page p{
+    color:black;
+    font-size: 16px
+}
+
+#business_page .budget:hover{
+    text-decoration: underline;
+}
+#desc_beaugrenelle{
+    display: none;
+}
+#desc_web{
+    display: none;
+}
+#buget_par{
+    text-align: center;
 }
 
 

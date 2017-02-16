@@ -39,6 +39,24 @@ window.onload = function() {
     ThirdPic.onclick=function() {
         showThirdPic();
     }
+
+    $('.menu-header-white').click(function() {
+        $('.menu-header-white').css({
+            'display' : 'none',
+        });
+        $('.menu-dropdown').show('slow');
+        $('.menu-dropdown').css({
+            'display' : 'flex',
+        });
+    });
+
+    $('.menu-header-black').click(function() {
+        $('.menu-dropdown').hide(1000);
+        $('.menu-header-white').show(1000);
+        $('.menu-header-white').css({
+            'display' : 'flex',
+        });
+    });
     
     $('#img1, #img2, #img3').on('click', function() {
         var page = $(this).attr('href');
@@ -80,6 +98,8 @@ window.onload = function() {
         return false;
     });
 
+    /* A PROPOS */
+
     $('#business').on('click', function(){
         $('#container-global').slideUp(500);
         $('#business_page').show();
@@ -90,15 +110,55 @@ window.onload = function() {
         $('#container-global').show(500);
     });
 
+    $('#budget_beaugrenelle').click(function(){
+        $('#desc_beaugrenelle').slideDown(500);
+    });
+    
+    $('#budget_web').click(function(){
+        $('#desc_web').slideDown(500);
+    });
+    $("#twitter").hover(
+        function() {
+            $( this ).append( $( "<span><br>2 tweets sponsorisés par jour pendant 10 jours a 600&#128; par tweet</span>" ) );
+        }, function() {
+            $( this ).find( "span:last" ).remove();
+        }
+    );
+
+    $("#facebook").hover(
+        function() {
+            $( this ).append( $( "<span><br>2 posts sponsorisés par jour pendant 10 jours a 800&#128; par post</span>" ) );
+        }, function() {
+            $( this ).find( "span:last" ).remove();
+        }
+    );
+
+    $("#youtube").hover(
+        function() {
+            $( this ).append( $( "<span><br>1000&#128; par jour pendant 11 jours + réalisation vidéo 7500&#128; + guest de la vidéo : fossoyeur de films payé 1000&#128;</span>" ) );
+        }, function() {
+            $( this ).find( "span:last" ).remove();
+        }
+    );
+
+    /* MEDIA QUERY */
 
     function mediaQuery() {
         $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel, .star-wars-text, #discover-button, nav').css({
-                'display' : 'none',
+            'display' : 'none',
+        });
+
+        $('.menu-header').css({
+            'display' : 'flex',
         });
 
         $('.pathe-logo').css({
             'width' : '250px',
             'height' : '210px',
+        });
+
+        $('.logo-MAA').css({
+            'margin-right' : '0px',
         });
 
         $('.rey-picture').css({
@@ -156,8 +216,6 @@ window.onload = function() {
         $('.networks').css({
             'margin-right': 'auto',
         });
-
-
     }
 
     $(window).resize(function() {
@@ -168,6 +226,8 @@ window.onload = function() {
             window.location.reload(true);
         }
     });
+
+    /* BACKGROUND */
 
     particlesJS("particles-js", {
         "particles": {
