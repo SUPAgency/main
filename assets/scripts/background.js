@@ -135,17 +135,25 @@ window.onload = function() {
 
     /* ABOUT */
 
-    $('#business').on('click', function(){
+    $('#business').click(function(){
+        $('#container-global').slideUp(500);
+        $('.container-loader').css('display', 'flex');
+
+        var interval = setInterval(function() {
+            $('#business_page').css({
+                'display' : 'block',
+            });
+            $('.container-loader').css('display', 'none');
+            clearInterval(interval);
+        }, 1500);
+    });
+
+    $('#business-mobile').click(function(){
         $('#container-global').slideUp(500);
         $('#business_page').show();
     });
 
-    $('#business-mobile').on('click', function(){
-        $('#container-global').slideUp(500);
-        $('#business_page').show();
-    });
-
-    $('#go_main').on('click', function(){
+    $('#go_main').click(function(){
         $('#business_page').slideUp(500);
         $('#container-global').show(500);
     });
@@ -159,7 +167,7 @@ window.onload = function() {
     });
     $("#twitter").hover(
         function() {
-            $( this ).append( $( "<span><br>2 tweets sponsorisés par jour pendant 10 jours a 600&#128; par tweet</span>" ) );
+            $( this ).append( $( "<span><br>2 tweets sponsorisés par jour pendant 10 jours à 600&#128; par tweet.</span>" ) );
         }, function() {
             $( this ).find( "span:last" ).remove();
         }
@@ -167,7 +175,7 @@ window.onload = function() {
 
     $("#facebook").hover(
         function() {
-            $( this ).append( $( "<span><br>2 posts sponsorisés par jour pendant 10 jours a 800&#128; par post</span>" ) );
+            $( this ).append( $( "<span><br>2 posts sponsorisés par jour pendant 10 jours à 800&#128; par post,<br>Et la rémuneration de deux personnes pour le facebooklive : 300&#128; chacun.</span>" ) );
         }, function() {
             $( this ).find( "span:last" ).remove();
         }
@@ -175,7 +183,7 @@ window.onload = function() {
 
     $("#youtube").hover(
         function() {
-            $( this ).append( $( "<span><br>1000&#128; par jour pendant 11 jours + réalisation vidéo 7500&#128; + guest de la vidéo : fossoyeur de films payé 1000&#128;</span>" ) );
+            $( this ).append( $( "<span><br>1000&#128; par jour pendant 11 jours + réalisation vidéo 7500&#128; + guest de la vidéo : fossoyeur de films payé 1000&#128;.</span>" ) );
         }, function() {
             $( this ).find( "span:last" ).remove();
         }
@@ -184,7 +192,7 @@ window.onload = function() {
     /* MEDIA QUERY */
 
     function mediaQuery() {
-        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel, .star-wars-text, #discover-button, nav, .carousel').css({
+        $('.pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav, .background-carousel, .star-wars-text, #discover-button, nav, .carousel, .carousel-picture').css({
             'display' : 'none',
         });
 

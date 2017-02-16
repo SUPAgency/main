@@ -219,7 +219,7 @@ h1 {
 	text-shadow: 0 0 20px #791919; /* good color? */
 }
 
-#discover-button {
+.discover-button {
     line-height: 50px;
     text-align: center;
     width: 180px;
@@ -233,9 +233,10 @@ h1 {
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
+    color: white;
 }
 
-#discover-button:hover {
+.discover-button:hover {
     color: black;
     background-color: white;
     border-color: white;
@@ -270,7 +271,7 @@ h1 {
     border: 1px solid black;
     position: relative;
     top: 0px;
-    left: -220px;
+    left: -210px;
     height: 430px;
     margin: 10% auto;
     width: 35%;
@@ -290,6 +291,7 @@ h1 {
     margin-top: 0px;
    text-align: center;
 }
+
 .popup_block img {
     height: 100px;
     width: auto;
@@ -297,7 +299,7 @@ h1 {
 
 img.btn_close {
     position: absolute;
-    left: 545px;
+    left: 485px;
     top: 65px;
     float: right;
     margin: -55px -55px 0 0;
@@ -308,7 +310,7 @@ img.btn_close {
 .rey-picture-popup {
     position: absolute;
     top: 90px;
-    left: 1001px;
+    left: 873px;
     width: 400px;
     height: auto;
 }
@@ -734,19 +736,19 @@ img.btn_close {
     background-color: black;
     transition: 1s;
 }
-#business_page h3{
+#business_page h3 {
     font-size: 22px;
 }
-#business_page h1{
+#business_page h1 {
     color:black;
 }
 
-#business_page p{
+#business_page p {
     color:black;
     font-size: 16px
 }
 
-#business_page .budget:hover{
+#business_page .budget:hover {
     text-decoration: underline;
 }
 #desc_beaugrenelle{
@@ -759,19 +761,29 @@ img.btn_close {
     text-align: center;
 }
 
-
-@media (min-width: 1400px) {
-    .networks {
-        margin-top: 90px;
-    }
+#camera-body,
+#reel-1,
+#reel-2 {
+    fill: #fff;
+    fill-opacity: 0.95;
+    stroke: none;
 }
 
-@media screen and (max-width: 640px) {
-    .pathe-logo-fixed-two, .pathe-logo-fixed-three, .pathe-logo-fixed-four, .pathe-logo-fixed-five, #nav {
-        display: none;
-    }
+.container-loader {
+    height: 100vh;
+    background: #111;
+    color: rgba(255,255,255,0.95);
+    display: flexbox;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .page-carousel + img {
-        display: none;
-    }
+.load {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-weight: 300;
+    line-height: 2em;
 }
