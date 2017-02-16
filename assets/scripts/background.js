@@ -40,6 +40,21 @@ window.onload = function() {
         showThirdPic();
     }
 
+    /* MODAL */
+
+    $('.discover-button').click(function () {
+        $('html, body').css({
+            'overflow': 'hidden',
+            'height': '100%'
+        });
+    })
+
+    $('.btn_close').click(function () {
+        $('html, body').css({
+            'overflow': 'initial',
+        });
+    })
+
     /* MENU BURGER */
 
     $('.menu-header-white').click(function() {
@@ -104,6 +119,19 @@ window.onload = function() {
         $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
         return false;
     });
+
+    /* PAGE 4 BIS */
+
+    $('.blue-frame').click(function(){
+        $('#4').slideUp(500);
+        $('#page4-bis').show(500);
+    });
+
+    $('#closep4').click(function(){
+        $('#page4-bis').slideUp(500);
+        $('#4').show(500);
+    });
+
 
     /* ABOUT */
 
