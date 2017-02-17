@@ -310,7 +310,7 @@ img.btn_close {
 .rey-picture-popup {
     position: absolute;
     top: 90px;
-    left: 873px;
+    left: 883px;
     width: 400px;
     height: auto;
 }
@@ -509,17 +509,27 @@ img.btn_close {
     margin-top: 15px;
 }
 
-.face, .group, .gift {
-    width: 50px;
-    height: 50px;
+.face {
+    width: 75px;
+    height: 45px;
 }
 
 .camera {
-    width: 45px;
+    width: 60px;
     height: 35px;
 }
 
-.figure, .hand {
+.group, .gift {
+    width: 75px;
+    height: 50px;
+}
+
+.hand {
+    width: 45px;
+    height: auto;
+}
+
+.figure {
     width: 45px;
     height: auto;
 }
@@ -606,7 +616,7 @@ img.btn_close {
 
 /* PAGE 4 Bis */
 
-#page4-bis{
+#page4-bis {
     height: 700px;
     display: none;
     flex-direction: column;
@@ -614,45 +624,22 @@ img.btn_close {
     justify-content: center;
 }
 
-#closep4{
-    padding: 15px;
-    color: white;
+.close {
+    margin-left: auto;
+    margin-right: 100px;
+    display: flex;
 }
 
 .slide-img {
+    height: 500px;
+    width: 1125px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.arrow-left {
-  border-right: 5px solid white;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  margin-left: 10px;
-}
-
-.arrow-right {
-  border-left: 5px solid white;
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
-}
-
-.lazy {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1000px;
-}
-
-.lazy img {
-    width: 310px;
-    height: 400px;
-    display: none;
-}
-
-.lazy img:first-child {
-    display: flex;
+.slide-img img {
+    width: 275px;
 }
 
 /* PAGE 5 */
@@ -711,23 +698,34 @@ img.btn_close {
 
 /* BUSINESS PAGE */
 
+#Budget_par{
+    text-align: center;
+}
+#business_page header{
+    background-color: #921A1a;
+    align-items: center;
+}
+
 #business_page{
     display: none;
-    background-color: white;
+    background-color: white;;
     height: 800px;
     margin: 0px 200px;
-    padding: 20px
+    padding-top: 20px;
+    color : #1b1b1b;
+    filter: drop-shadow(0px 0px 20px #921A1a);  
 }
 .gaumont-ecriture{
     width: 150px;
-    height: 150px;
+    height: 100px;
 }
  #business_page h2 {
     padding: 15px;
     border-radius: 5px;
     border: 0px solid black;
-    color:black;
+    color:white;
     height: 20px;
+    margin-right: 20px;
 }
 
 #business_page #go_main:hover {
@@ -740,11 +738,11 @@ img.btn_close {
     font-size: 22px;
 }
 #business_page h1 {
-    color:black;
+    color:white;
 }
 
 #business_page p {
-    color:black;
+    color:#1b1b1b;
     font-size: 16px
 }
 

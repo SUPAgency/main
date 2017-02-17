@@ -116,18 +116,21 @@ window.onload = function() {
             $('.circle').css('background-color', 'black')
         }
         $(this).css('background-color', 'white');
-        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        $('html, body').animate({ scrollTop: $(page).offset().top }, speed ); // Go
         return false;
     });
 
     /* PAGE 4 BIS */
 
-    $('.blue-frame').click(function(){
+    $('.blue-frame').click(function() {
         $('#4').slideUp(500);
         $('#page4-bis').show(500);
+        $('#page4-bis').css({
+            'display' : 'flex',
+        });
     });
 
-    $('#closep4').click(function(){
+    $('#closep4').click(function() {
         $('#page4-bis').slideUp(500);
         $('#4').show(500);
     });

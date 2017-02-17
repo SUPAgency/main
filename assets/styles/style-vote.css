@@ -1,3 +1,69 @@
+    #overlay3{
+    display: none;
+    position: fixed;
+    top:0; right: 0; bottom:0; left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#overlay3:target{
+    display: block;
+}
+.popup_block{
+    background: #131313 ;
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+    top: 0px;
+    width: 80%;
+    height: 77%;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 20px red;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.popup_block img{
+    height: 1100px;
+    width: auto;
+    margin-top: 50px;
+}
+
+img.btn_close {
+    position: absolute;
+    left: 880px;
+    top: 65px;
+    float: right;
+    margin: -55px -55px 0 0;
+    height: 50px;
+    width: auto;
+}
+.discover-button {
+    margin-top: 50px;
+    line-height: 105px;
+    text-align: center;
+    width: 380px;
+    height: 110px;
+    border-radius: 5px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border: 1px solid red;
+}
+
+.discover-button:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+    transition: 1s;
+}
+
+
     .desktop-podium{
         display: flex;
         flex-direction: column;
@@ -61,8 +127,8 @@
     }
 
     .logo-MAA {
-        margin-top: 15px;
-        height: 180px;
+        width: 120px;
+        height: 90px;
     }
 
     .pathe-logo {
@@ -210,21 +276,26 @@
         .menu-header {
             display: none;
         }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
         nav{
-            width: 200px;
+            width: 150px;
             height: 80px;
             display: flex;
             justify-content: space-between;
             letter-spacing: 2px;
-            margin-top: 20px;
-            margin-right: 50px;
             color: white;
-             }
+        }
 
          nav h2 {
             padding: 15px;
             border-radius: 5px;
             border: 0px solid black;
+            text-transform: uppercase;
         }
 
         nav h2:hover {
@@ -240,28 +311,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        #discover-button {
-            line-height: 50px;
-            text-align: center;
-            width: 180px;
-            height: 50px;
-            /*border-width: 1px;
-            border-style: solid;
-            border-image: linear-gradient(to right, #d10f0e, #f14f00); /* DOESN'T WORK */
-            border-radius: 5px;
-            font-size: 20px;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: white;
-            border: 1px solid red;
-        }
-
-        #discover-button:hover {
-            color: black;
-            background-color: white;
-            border-color: white;
-            transition: 1s;
         }
 
         .plus-h1{
@@ -302,9 +351,10 @@
        }
        .other-video{
            display: flex;
-           height: 250px;
+           height: 230px;
            justify-content: space-around;
            width: 100%;
+           margin-bottom: 40px;
        }
         .img{
             height: auto;
@@ -314,5 +364,37 @@
         .speech-video{
             margin-top: 40px;
         }
+
+        .popup_block{
+
+            width: 25%;
+            height: 70%;
+            margin-left: 450px;
+        }
+
+        .popup_block img{
+            height: 420px;
+            width: auto;
+            margin-top: 0px;
+        }
+
+        img.btn_close {
+            position: absolute;
+            left: 350px;
+            top: 65px;
+            float: right;
+            margin: -55px -55px 0 0;
+            height: 20px;
+            width: auto;
+        }
+
+        .discover-button {
+            margin-top: 20px;
+            line-height: 60px;
+            width: 250px;
+            height: 60px;
+            font-size: 30px;
+        }
+
 
     }

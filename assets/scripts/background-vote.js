@@ -7,6 +7,12 @@ window.onload = function() {
             $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
             return false;
         });
+
+        $('#js-discover').click(function () {
+            $(this).html("MERCI !");
+            $(this).css({"background-color": "red",
+            "color": "white"})
+        });
     });
 
     particlesJS("particles-js", {

@@ -16,7 +16,7 @@ canvas {
 
 #particles-js {
     width: 115%;
-    height: 3250px;
+    height: 100%;
     margin-left:15px;
     background-color: #000;
     background-size: cover;
@@ -61,6 +61,7 @@ canvas {
     #particles-js {
         width: 100%;
         margin-left: 0px;
+        height: 1600px;
     }
 
 }
