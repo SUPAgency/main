@@ -28,7 +28,6 @@
     align-items: center;
 }
 
-
 .popup_block img {
     height: 1100px;
     width: auto;
@@ -48,6 +47,13 @@ img.btn_close {
 .star-wars-text {
     width: 250px;
     height: 150px;
+}
+
+.discover-pathe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .discover-button {
@@ -76,6 +82,7 @@ img.btn_close {
     width: 800px;
     margin-top: -40px;
 }
+
 nav {
     display: none;
 }
@@ -89,17 +96,13 @@ nav {
     display: none;
 }
 
-main {
-    display: none;
-}
-
 .page1 {
     display: flex;
     flex-direction: column;
 }
 
 .page1-content {
-        padding-bottom: 100px;
+    padding-bottom: 100px;
     display: flex;
 }
 
@@ -109,8 +112,17 @@ main {
     flex-direction: column;
 }
 
-.discover-pathe {
+.star-wars-text, .discover-button {
     display: none;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+}
+
+.rey-picture {
+    margin-left: 150px;
 }
 
 body {
@@ -180,11 +192,7 @@ h1 {
     align-content: center;
 }
 
-.rey-img {
-    margin-left: 150px;
-}
-
-.video-main{
+.video-main {
     display: flex;
     align-items: center;
     align-content: center;
@@ -319,13 +327,6 @@ p {
         transition: 1s;
      }
 
-    .discover-pathe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .plus-h1 {
         font-size: 100px;
     }
@@ -338,10 +339,6 @@ p {
         display: none;
     }
 
-    .rey-picture {
-        height: 400px;
-    }
-
     main {
         display: flex;
         justify-content: space-around;
@@ -349,8 +346,9 @@ p {
     }
 
     .rey-picture {
+        margin-left: 0;
         width: 400px;
-        height: auto;
+        height: 514px;
     }
 
     #speechhidden{
@@ -406,7 +404,12 @@ p {
     }
 
     .discover-button {
+        display: block;
         font-size: 20px;
+    }
+
+    .logos-pathe-sw {
+        display: flex;
     }
 
     .logos-pathe-sw .pathe-logo {
@@ -415,5 +418,9 @@ p {
 
     .logos-pathe-sw .pathe-logo-new {
         display: none;
+    }
+
+    .star-wars-text {
+        display: flex;
     }
 }

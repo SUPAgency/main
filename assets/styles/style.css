@@ -200,6 +200,7 @@ main {
 }
 
 .pathe-logo-new {
+    display: none;
     width: 450px;
     height: auto;
 }

@@ -293,7 +293,7 @@ window.onload = function() {
         });
 
         $('.logos-pathe-sw .pathe-logo-new').css({
-            'display' : 'flex',
+            'display' : 'block',
         });
     }
 
