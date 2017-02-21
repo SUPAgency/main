@@ -194,9 +194,14 @@ main {
     align-items: center;
 }
 
-.logos-pathe-sw .pathe-logo {
-    width: 200px;
-    height: 160px;
+.pathe-logo {
+    width: 250px;
+    height: auto;
+}
+
+.pathe-logo-new {
+    width: 450px;
+    height: auto;
 }
 
 .star-wars-text {
@@ -221,7 +226,7 @@ h1 {
 }
 
 .page:first-child h1 {
-	text-shadow: 0 0 20px #791919; /* good color? */
+	text-shadow: 0 0 20px red;
 }
 
 .discover-button {
@@ -230,9 +235,6 @@ h1 {
     width: 180px;
     height: 50px;
     border: 1px solid white;
-    /*border-width: 1px;
-	border-style: solid;
-	border-image: linear-gradient(to right, #d10f0e, #f14f00); /* DOESN'T WORK */
     border-color: red;
     border-radius: 5px;
     font-size: 20px;
@@ -260,41 +262,43 @@ h1 {
 	height: auto;
 }
 
-#overlay3{
+#overlay3 {
     display: none;
     position: fixed;
-    top:0; right: 0; bottom:0; left:0;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
-#overlay3:target{
+
+#overlay3:target {
     display: block;
 }
-.popup_block{
+
+.popup_block {
     background: #131313 ;
     padding: 20px;
     border: 1px solid black;
     position: relative;
-    top: -10px;
-    left: -210px;
-    height: 430px;
     margin: 10% auto;
     width: 35%;
     box-shadow: 0px 0px 20px red;
     border-radius: 10px;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
 }
 
 .popup_block p {
     font-size: 15px;
+    line-height: 1.5;
     text-align: center;
 }
 
 .popup_block h2 {
     margin-top: 0px;
-   text-align: center;
+    text-align: center;
 }
 
 .popup_block img {
@@ -310,14 +314,6 @@ img.btn_close {
     margin: -55px -55px 0 0;
     height: 20px;
     width: auto;
-}
-
-.rey-picture-popup {
-    position: absolute;
-    top: 90px;
-    left: 876px;
-    width: 400px;
-    height: auto;
 }
 
 /* PAGE 2 */

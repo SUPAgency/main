@@ -214,6 +214,7 @@ window.onload = function() {
 
         $('.rey-picture').css({
             'width' : '700px',
+            'margin-left' : '150px'
         });
 
         $('.anim-yellow .carousel').css({
@@ -270,6 +271,29 @@ window.onload = function() {
 
         $('.animation').css({
             'margin' : '0px',
+        });
+
+        $('.popup_block').css({
+            'width' : '70%',
+            'font-size' : '32px',
+            'padding-top' : '70px',
+        });
+
+        $('.popup_block p').css({
+            'font-size' : '32px',
+        });
+
+        $('img.btn_close').css({
+            'height' : '40px',
+            'left' : '675px',
+        });
+
+        $('.logos-pathe-sw .pathe-logo').css({
+            'display' : 'none',
+        });
+
+        $('.logos-pathe-sw .pathe-logo-new').css({
+            'display' : 'flex',
         });
     }
 
